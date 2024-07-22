@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nicolas Seda - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Nicolas Seda
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://attic.sh/t2tudddtgsawi3jj4014ngymy5li.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Nicolas Seda! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a former mathematics teacher with experience in basic scripting using JavaScript, Python, MATLAB, and spreadsheet software. 
+            Much of my experience stems from my time generating content as a teacher and analysing student data, while the remainder comes from my field of study during my Bachelor's degree in physics. 
+            I have developed analysis tools and scripts to automate grading processes and used MATLAB to model evolving physical systems. 
+            I am currently learning more advanced programming languages and software engineering principles while working on a degree in computer science to shift my career into the realm of software development. 
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+            <img src="html_finalprojimages/html5.png"/>
+            <h6>HTML</h6>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/js.jpeg"/>
+            <h6>JavaScript</h6>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/49px-Google_Sheets_logo_%282014-2020%29.svg.png"/>
+            <h6>Spreadsheet Software</h6>
+            <p>6 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/268px-Matlab_Logo.png"/>
+            <h6>MATLAB</h6>
+            <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png"/>
+            <h6>Python</h6>
+            <p>1 year experience</p>
+        </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Student Assessment Itemized Analysis Tool</h3>
+            <ul>
+              <li>Developed a spreadsheet based grading an answer analysis tool for the math education department at my previous workplace</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Pendulum Motion Prediction Model</h3>
+            <ul>
+              <li>Developed a model to predict the motion of a pendulum based system using MATLAB</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Kinematics System Model</h3>
+            <ul>
+              <li>Developed a model to accelerate analysis of kinematic systems using MATLAB</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Nicolas is an expert at applying prior knowledge and developing new skillselts to benefit his current projects. 
+          He excels in managing organization and mapping plans while gathering required tools and methods. 
+          He persues tasks tenaciously and assists others as best as possible. 
+          In group projects, he assists others and helps to ensure that the group is communicating properly and sufficiently on works in progress. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Nicolas is great to work with, he always does his utmost to research and understand the task at hand to suite the needs of the team. 
+          I will definitely hope to work with him again on overlapping projects in the future. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I worked with Nicolas during the later stages of a project on analyzing the output of a highly technical data collection instrument, 
+          and thanks to his detailed knowledge and communication with everyone involved the analysis went forward without any problems. 
+          Anyone would benefit from having his careful eye and detail oriented influence on their team.  
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+        <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your comment!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
